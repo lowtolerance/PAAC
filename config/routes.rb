@@ -1,4 +1,20 @@
 Paac::Application.routes.draw do
+  
+  match 'about/' => 'pages#about'
+  match 'promotions/' => 'pages#promotions'
+  match 'contact/' => 'pages#contact'
+  match 'services/' => 'services#index'
+  match 'services/new' => 'services#new'
+  match 'services/create' => 'services#create'
+  match 'services/edit(/:permalink)' => 'services#edit'
+  match 'services/update' => 'services#update'
+  match 'services/delete(/:permalink)' => 'services#delete'
+  match 'services/destroy' => 'services#destroy'
+  match 'services/list' => 'services#list'
+  match 'services(/:permalink)' => 'services#show'
+  
+  root :to => 'pages#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

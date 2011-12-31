@@ -1,0 +1,4 @@
+<ul>
+<% @services.each do |service| %>
+	<li><%= link_to(service.title, "/services/#{service.permalink}") %></li>
+<% end %>
