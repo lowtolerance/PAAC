@@ -1,0 +1,15 @@
+= form_for(:service, :url => {:action => 'update', :permalink => @service.permalink}) do |f|
+  %ul
+    %li
+      Name: #{f.text_field(:name)}
+    %li
+      Title: #{f.text_field(:title)}
+      %li
+        Permalink: #{f.text_field(:permalink)}
+      %li
+        Position: #{f.text_field(:position)}
+      %li
+        Visible: #{f.check_box(:visible)}
+      %li
+        Description: #{f.text_area(:description)}
+  = submit_tag("Save Service")

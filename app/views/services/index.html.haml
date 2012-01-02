@@ -1,0 +1,22 @@
+.loadme
+  #innerwrapper.services
+    %h2.tk-adelle Services
+    %p
+      %img{:alt => "Brian working", :src => "assets/services.jpg"} Princess Anne Automotive Center offers a comprehensive range of services in order to help keep your domestic or imported vehicle running safely, smooth and legally.
+    %p Our services include:
+    %ul
+      - @services.each do |service|
+        %li
+          = link_to service.name, services_path + "/#{service.permalink}"
+    %p
+      And
+      %em yes
+      \- we do
+      %b State Inspections
+      and
+      = succeed "!" do
+        %b Scheduled Maintenance
+      %p.closer
+        If you have other questions about our services, please don't hesistate to #{link_to("email", "/contact/")} us, or give us a call at
+        = succeed "!" do
+          %strong (757)858-0744

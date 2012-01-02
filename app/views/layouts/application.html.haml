@@ -1,0 +1,52 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}/
+    %meta{:content => "width=device-width", :name => "viewport"}/
+    %meta{:content => "Princess Anne Automotive Center - Norfolk, Virginia's best automotive maintenance, diagnostic and repair shop.", :name => "description"}/
+    %title
+      Princess Anne Automotive Center -
+      - if @service
+        = @service.title
+      - elsif @title
+        = @title
+      - else
+        Norfolk's Best Automotive Repair Shop
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+  %body#main
+    #wrapper
+      #header
+        %p#title.pop.tk-adelle
+          %a{:href => "/"}
+            Princess Anne
+            %br Automotive Center
+        %ul#navbar.menuitem.tk-adelle
+          %li
+            %a#about.pop{:href => "/about/"} About
+          %li
+            %a#services.pop{:href => "/services/"} Services
+          %li
+            %a#promotions.pop{:href => "/promotions/"} Promotions
+      #content.tk-myriad-pro
+        = yield
+      #footer.pop2
+        %ul.sitemap
+          %li
+            %a{:href => "/"} Home
+          %li
+            %a{:href => "/services/"} Services
+          %li
+            %a{:href => "/promotions/"} Promotions
+          %li
+            %a{:href => "/about/"} About Us
+          %li
+            %a{:href => "/contact/"} Contact Us
+        %p
+          Princess Anne Automotive Center
+          %span> |
+          5333 East Princess Anne Road
+          %span> |
+          Norfolk, VA 23502
+          %span> |
+          1(757)858-0744

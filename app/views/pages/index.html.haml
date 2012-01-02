@@ -1,0 +1,41 @@
+.loadme
+  #slideshow.flexslider
+    %ul.slides
+      %li
+        %img{:alt => "Princess Anne Automotive Center's storefront", :src => "/assets/slideshow.jpg"}/
+        %p.flex-caption Princess Anne Automotive Center's storefront
+      %li
+        %img{:alt => "Brian and Rick working in the shop", :src => "/assets/slideshow2.jpg"}/
+        %p.flex-caption Brian and Rick working in the shop
+  #sidebar
+    %div{:itemscope => "", :itemtype => "http://schema.org/AutoRepair"}
+      %h1
+        %span{:itemprop => "name"} Princess Anne Automotive Center
+      %p.description
+        %span{:itemprop => "description"} At Princess Anne Automotive Center, we are dedicated to providing our customers with the best customer experience. Together, we have over 100 years of experience repairing cars and trucks. Whether you need to renew your state inspection or replace your transmission, we are here to help!
+      #sidewrapper
+        %h2.tk-adelle Our Location
+        %div{:itemprop => "address", :itemscope => "", :itemtype => "http://schema.org/PostalAddress"}
+          %p.address
+            %span{:itemprop => "streetAddress"} 5333 East Princess Anne Road
+          %p.address
+            %span{:itemprop => "addressLocality"}> Norfolk
+            ,
+            %span{:itemprop => "addressRegion"} VA
+            %span{:itemprop => "postalCode"} 23502
+        %h2.tk-adelle Contact Us
+        %p.phone
+          %span{:itemprop => "telephone"} 1(757)858-0744
+        %p.email
+          %a{:href => "http://www.princessanneauto.com/contact", :itemprop => "email"} rick@princessanneauto.com
+        %h2.tk-adelle Hours
+        %p{:datetime => "Mo-Fr 8:00-18:00", :itemprop => "openingHours"}
+          Monday-Friday, 8AM-6PM
+          %p{:datetime => "Sa 8:00 16:00", :itemprop => "openingHours"}
+            Saturday, 8AM-4PM
+            %h2.tk-adelle We Accept
+            %p
+              %span{:itemprop => "paymentAccepted"} Cash, check or credit
+      #supplemental
+        %h2.tk-adelle Find us on Facebook
+        .fb-like-box{"data-header" => "false", "data-href" => "https://www.facebook.com/PrincessAnneAuto", "data-show-faces" => "true", "data-stream" => "true", "data-width" => "380"}

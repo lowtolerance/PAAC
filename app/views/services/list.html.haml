@@ -1,0 +1,10 @@
+%ul
+  - @services.each do |service|
+    %li
+      %b Name:
+      = service.name
+      %ul
+        %li
+          = link_to("Edit", "edit/#{service.permalink}")
+        %li
+          = link_to("Delete", "delete/#{service.permalink}")
