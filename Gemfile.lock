@@ -136,7 +136,7 @@ DEPENDENCIES
   formatize
   haml-rails (>= 0.3.4)
   jquery-rails
-  mysql2 (>= 0.3)
+  mysql2
   pg
   rails (= 3.1.0)
   sass-rails (~> 3.1.0)

@@ -6,6 +6,7 @@ gem 'rails', '3.1.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', :group => :development
+gem "pg", :group => :production
 
 gem 'bluecloth', '2.0.7'
 gem 'formatize'
