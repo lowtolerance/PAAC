@@ -1,6 +1,0 @@
-<h2>Delete Subject</h2>
-<%= form_for(:service, :url => {:action => 'destroy', :permalink => @service.permalink}) do |f| %>
-	
-	<p><%= @service.name %></p>
-	<%= submit_tag("Delete Service") %>
-<% end %>
