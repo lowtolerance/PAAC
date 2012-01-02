@@ -7,7 +7,7 @@ gem 'rails', '3.1.0'
 
 gem 'mysql2', :group => :development
 gem "pg", :group => :production
-gem "sqlite3-ruby", :group => :development
+
 gem 'bluecloth', '2.0.7'
 gem 'formatize'
 gem "jquery-rails"
