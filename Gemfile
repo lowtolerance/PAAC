@@ -5,14 +5,9 @@ gem 'rails', '3.1.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-group :development, :test do
-	gem 'mysql2', '>= 0.3'
-end
+gem 'mysql2', '1.3.3', :group => :development
 
-group :production do
-	gem 'pg'
-end
-
+gem 'bluecloth', '2.0.7'
 gem 'formatize'
 gem "jquery-rails"
 
