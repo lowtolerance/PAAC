@@ -17,9 +17,6 @@ Paac::Application.routes.draw do
   
   root :to => 'pages#index'
   
-  resources :services
-  resources :pages
-  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
