@@ -11,7 +11,7 @@ gem "jquery-rails"
 
 gem 'pg', :group => :production
 
-gem 'haml-rails', '>= 0.3.4', :group => :development
+gem 'haml-rails', '>= 0.3.4'
 
 group :assets do
 	gem 'sass-rails', "  ~> 3.1.0"
