@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    	<meta content="width=device-width" name="viewport">
-    	<meta content="Princess Anne Automotive Center - Norfolk, Virginia's best automotive maintenance, diagnostic and repair shop." name="description">
-    	<title>Princess Anne Automotive Center - <% if @service%><%= @service.title %><% elsif @title %><%= @title %><% else %>Norfolk's Best Automotive Repair Shop<% end %></title>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+		<meta content="width=device-width" name="viewport">
+		<meta content="Princess Anne Automotive Center - Norfolk, Virginia's best automotive maintenance, diagnostic and repair shop." name="description">
+		<title>Princess Anne Automotive Center - <% if @service%><%= @service.title %><% elsif @title %><%= @title %><% else %>Norfolk's Best Automotive Repair Shop<% end %></title>
 		<%= stylesheet_link_tag "application" %>
 		<%= javascript_include_tag "application" %>
-  	<head>
+	</head>
 	<body id="main">
-    <div id="wrapper">
-		<div id="header"
-        	<p id="title" class="pop tk-adelle">
-          		<%= link_to("Princess Anne Automotive Center", "pages#index") %>
+		<div id="wrapper">
+			<div id="header"
+				<p id="title" class="pop tk-adelle">
+				<%= link_to("Princess Anne Automotive Center", "pages#index") %>
 				<ul id="navbar" class="menuitem tk-adelle">
-          			<li>
+					<li>
 						<%= link_to("About", "pages#about", :id => "about", :class => "pop") %>
 					</li>
-          			<li>
-						<%= link_to("Services", "services#index", :id => "services", :class => "pop") %>
 					<li>
+						<%= link_to("Services", "services#index", :id => "services", :class => "pop") %>
+					</li>
 					<li>
 						<%= link_to("Promotions", "pages#promotions", :id => "promotions", :class => "pop") %>
 					</li>
 				</ul>
-		</div>
-      	<div id="content" class="tk-myriad-pro">
-        	<%= yield %>
-		</div>
-		<div id="footer">
-        <ul class="sitemap">
-          	<li>
-				<%= link_to("Home", "pages#index") %>
-			</li>
-			<li>
-				<%= link_to("Services", "services#index") %>
-			</li>
-			<li>
-				<%= link_to("Promotions", "pages#promotions") %>
-			</li>
-			<li>
-				<%= link_to("About Us", "pages#about") %>
-			</li>
-			<li>
-				<%= link_to("Contact Us", "pages#contact") %>
-			</li>
-		</ul>
-			<p>Princess Anne Automotive Center<span> | </span>5333 East Princess Anne Road<span> | </span>Norfolk, VA 23502<span> | </span>1(757)858-0744</p>
+			</div>
+			<div id="content" class="tk-myriad-pro">
+				<%= yield %>
+			</div>
+			<div id="footer">
+				<ul class="sitemap">
+					<li>
+						<%= link_to("Home", "pages#index") %>
+					</li>
+					<li>
+						<%= link_to("Services", "services#index") %>
+					</li>
+					<li>
+						<%= link_to("Promotions", "pages#promotions") %>
+					</li>
+					<li>
+						<%= link_to("About Us", "pages#about") %>
+					</li>
+					<li>
+						<%= link_to("Contact Us", "pages#contact") %>
+					</li>
+				</ul>
+				<p>Princess Anne Automotive Center<span> | </span>5333 East Princess Anne Road<span> | </span>Norfolk, VA 23502<span> | </span>1(757)858-0744</p>
 			</div>
 		</div>
 	</body>
