@@ -1,5 +1,7 @@
 Paac::Application.routes.draw do
   
+  resource :services, :pages
+  
   match 'about/' => 'pages#about'
   match 'promotions/' => 'pages#promotions'
   match 'contact/' => 'pages#contact'
