@@ -9,7 +9,7 @@ gem 'mysql2', '>= 0.3'
 gem 'formatize'
 gem "jquery-rails"
 
-gem pg, :group => :production
+gem 'pg', :group => :production
 
 gem 'haml-rails', '>= 0.3.4', :group => :development
 
