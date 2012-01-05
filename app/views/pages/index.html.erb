@@ -1,0 +1,50 @@
+<div class="loadme">
+	<div id="slideshow.flexslider">
+    	<ul class="slides">
+      		<li>
+        		<%= image_tag("slideshow.jpg") %>
+        		<p class="flex-caption">Princess Anne Automotive Center's storefront</p>
+      		</li>
+				<%= image_tag("slideshow2.jpg") %>
+        		<p class="flex-caption">Brian and Rick working in the shop</p>
+  		</ul>
+		<div id="sidebar">
+			<div itemscope itemtype="http://schema.org/AutoRepair">
+      		<h1><span itemprop="name">Princess Anne Automotive Center</span></h1>
+      		<p class="description"><span itemprop="description">At Princess Anne Automotive Center, we are dedicated to providing our customers with the best customer experience. Together, we have over 100 years of experience repairing cars and trucks. Whether you need to renew your state inspection or replace your transmission, we are here to help!</p>
+      		<div id="sidewrapper">
+        <h2 class="tk-adelle">Our Location</h2>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+			<p class="address">
+       			<span itemprop="streetAddress">5333 East Princess Anne Road</span>
+			</p>
+          	<p class="address">
+            	<span itemprop="addressLocality">Norfolk</span>
+            </p>
+            <span itemprop="addressRegion">VA</span>
+            <span itemprop="postalCode">23502</span>
+		</div>
+        <h2 class="tk-adelle">Contact Us</h2>
+		<p class="phone">
+			<span itemprop="telephone">1(757)858-0744</span>
+		</p>
+		<p class="email">
+        	<%= link_to("rick@princessanneauto.com", "pages#contact") %>
+		</p>
+        <h2 class="tk-adelle">Hours</h2>
+        <p datetime="Mo-Fr 8:00-18:00" itemprop="openingHours">
+        	Monday-Friday, 8AM-6PM
+		</p>
+        <p datetime="Sa 8:00 16:00" itemprop="openingHours">
+            Saturday, 8AM-4PM
+		<p>
+		<h2 class="tk-adelle">We Accept</h2>
+       	<p>
+        	<span itemprop="paymentAccepted">Cash, check or credit>
+		</p>
+      	<div id="supplemental">
+        <h2 class="tk-adelle">Find us on Facebook</h2>
+        .fb-like-box{"data-header" => "false", "data-href" => "https://www.facebook.com/PrincessAnneAuto", "data-show-faces" => "true", "data-stream" => "true", "data-width" => "380"}
+		</div>
+	</div>
+</div>

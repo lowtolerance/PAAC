@@ -48,7 +48,7 @@ Paac::Application.configure do
   config.active_support.deprecation = :notify
   
   config.assets.compress = true
-  config.assets.compile = false
+  config.assets.compile = true
   config.assets.digest = true
   
 end
