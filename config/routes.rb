@@ -1,6 +1,6 @@
 Paac::Application.routes.draw do
   
-  resources :services, :pages
+  
   
   match 'about/' => 'pages#about'
   match 'promotions/' => 'pages#promotions'
@@ -16,6 +16,8 @@ Paac::Application.routes.draw do
   match 'services(/:permalink)' => 'services#show'
   
   root :to => 'pages#index'
+  
+  resources :services, :pages
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
