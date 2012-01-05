@@ -1,0 +1,18 @@
+<div class="loadme">
+	<div class="services" id="innerwrapper">
+    	<h2 class="tk-adelle">Services</h2>
+    	<p>
+			<%= image_tag("services.jpg") %>Princess Anne Automotive Center offers a comprehensive range of services in order to help keep your domestic or imported vehicle running safely, smooth and legally.
+		</p>
+		<p>Our services include:</p>
+		<ul>
+		<% @services.each do |service| %>
+        	<li>
+				<%= link_to service.name, services_path + "/#{service.permalink}" %>
+			</li>
+	  	<% end %>
+		</ul>
+		<p>And <em>yes</em> - we do <b>State Inspections</b> and <b>Scheduled Maintenance</b>
+    	<p class="closer">If you have other questions about our services, please don't hesitate to <%= link_to("email", "/contact/") %> us, or give us a call at <strong>(757)858-0744</strong></p>
+	</div>
+</div>
