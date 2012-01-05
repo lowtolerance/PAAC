@@ -1,7 +1,5 @@
 Paac::Application.routes.draw do
   
-  
-  
   match 'about/' => 'pages#about'
   match 'promotions/' => 'pages#promotions'
   match 'contact/' => 'pages#contact'
