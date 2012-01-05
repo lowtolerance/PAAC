@@ -12,13 +12,13 @@
 		<div id="wrapper">
 			<div id="header"
 				<p id="title" class="pop tk-adelle">
-				<%= link_to "Princess Anne Automotive Center", page_path %>
+				<%= link_to "Princess Anne Automotive Center", pages_path %>
 				<ul id="navbar" class="menuitem tk-adelle">
 					<li>
 						<%= link_to "About", :controller => "pages", :action => "about ", :id => "about", :class => "pop" %>
 					</li>
 					<li>
-						<%= link_to "Services", service_path, :id => "services", :class => "pop" %>
+						<%= link_to "Services", services_path, :id => "services", :class => "pop" %>
 					</li>
 					<li>
 						<%= link_to "Promotions", :controller => "pages", :action => "promotions", :id => "promotions", :class => "pop" %>
@@ -31,10 +31,10 @@
 			<div id="footer">
 				<ul class="sitemap">
 					<li>
-						<%= link_to "Home", page_path %>
+						<%= link_to "Home", pages_path %>
 					</li>
 					<li>
-						<%= link_to "Services", service_path %>
+						<%= link_to "Services", services_path %>
 					</li>
 					<li>
 						<%= link_to "Promotions", :controller => "pages", :action => "promotions" %>
